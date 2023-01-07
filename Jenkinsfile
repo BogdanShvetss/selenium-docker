@@ -2,14 +2,9 @@ pipeline {
     // master executor should be set to 0
     agent any
     stages {
-         stage('test stage') {
-                steps {
-                    cmd_exec('mkdir "test"')
-                }
-            }
-
         stage('Build Jar') {
             steps {
+            echo "test"
                 //sh
                 bat "mvn clean package -DskipTests"
             }
