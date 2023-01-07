@@ -3,8 +3,8 @@ pipeline {
     agent any
     stages {
          stage('test stage') {
-                    cmd_exec('mkdir "test"')
-            }
+            bat "mkdir test"
+         }
 
         stage('Build Jar') {
             steps {
