@@ -2,7 +2,7 @@ pipeline {
     // master executor should be set to 0
     agent any
     stages {
-         stage('Build Jar') {
+         stage('test stage') {
                 steps {
                     bat "mkdir testFolder"
                 }
