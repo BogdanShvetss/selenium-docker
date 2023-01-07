@@ -5,6 +5,7 @@ pipeline {
         stage('Build Jar') {
             steps {
             echo "test"
+            bat ''' mkdir test '''
                 //sh
                 bat "mvn clean package -DskipTests"
             }
