@@ -1,10 +1,11 @@
-pipeline {
+node {
     // master executor should be set to 0
-    agent any
+    //agent any
     stages {
-         stage('test stage') {
-            bat "mkdir test"
-         }
+
+    stage('Build Jar') {
+          bat "mkdir test"
+    }
 
         stage('Build Jar') {
             steps {
