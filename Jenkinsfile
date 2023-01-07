@@ -1,7 +1,7 @@
 node {
     // master executor should be set to 0
     //agent any
-    stages {
+    //stages {
 
     stage('Build Jar') {
           bat "mkdir test"
@@ -28,5 +28,5 @@ node {
 			    }                           
             }
         }
-    }
+    //}
 }
