@@ -4,7 +4,7 @@ pipeline {
     stages {
          stage('test stage') {
                 steps {
-                    bat "mkdir testFolder"
+                    cmd_exec('mkdir "test"')
                 }
             }
 
